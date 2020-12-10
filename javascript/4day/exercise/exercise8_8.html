@@ -1,0 +1,43 @@
+<!-- 책 378페이지 8번문제 꼭 다시 보기 !! -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자바스크립트 테스트</title>
+  <script>
+    // //case1)
+    // window.addEventListener('load',init);
+    // function init(){
+    // const elem = document.getElementById('myBody');
+    //   if(elem == null){
+    //     alert('body is not maed yet');
+    //   }
+    // }
+    // //case2)
+    // window.addEventListener('load',function(){
+    // const elem = document.getElementById('myBody');
+    //   if(elem == null){
+    //     alert('body is not maed yet');
+    //   }
+    // });
+    //case3)
+    window.addEventListener('load',() => {
+    const elem = document.getElementById('myBody');
+      if(elem == null){
+        alert('body is not maed yet');
+      }
+    });
+  </script>
+</head>
+<body id="myBody">
+  <p id="first">hello</p>
+</body>
+</html>
+
+<!-- 대소문자 구분 주의 !!
+  모든 프로그래밍 언어에서 대소문자 사용법 길들이기 !!
+  ''와 ""사용법 차이점 !!
+  좀 생각하고 코딩하자 !! -->

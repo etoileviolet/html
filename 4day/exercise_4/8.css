@@ -1,0 +1,10 @@
+body {background-color: yellow;
+  
+}
+
+p{
+  text-align: center;
+}
+p:nth-last-of-type(1){
+  background-color: blue;
+}

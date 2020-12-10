@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=u, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {box-sizing: border-box;}
+    ul {
+      margin:0; padding:0;
+      list-style-type: none;
+      background-color: #333;
+      color: #eee;
+      border: 2px solid red;
+           overflow: hidden; 
+    }
+    /* ul div {border: 3px solid orchid;} */
+
+    ul li {
+      float: left;
+      padding: 0.3rem 0.5rem;
+      width: 70px;
+
+    }
+
+     ul li:hover{
+      text-decoration: underline;
+      cursor: pointer;
+      background-color: #555; 
+    }
+    .clearfix{clear: both;}
+
+
+    .wrapper{width: 210px;
+      margin: 0 auto; 
+    }
+
+  </style>
+</head>
+<body>
+  <ul>
+    <div class="wrapper">
+    	<li class="item1">menu1</li>
+    	<li class="item2">menu2</li>
+    	<li class="item3">menu3</li>
+    	<div class="clearfix"></div>
+    </div>
+      <!--<div></div> <div>div div div div div
+    </div><p>다음 라인</p>-->
+  </ul>
+</body>
+</html>
+
+<!-- 박스 사이즈 적용하는 방법 다시 숙지 할 것
+content-box 의 사이즈가 중요할땐  
+border-box 레이아웃의 크기를 중시할때 !!!! 구분해서 사용 !!!! ~ -->

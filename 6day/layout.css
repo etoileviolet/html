@@ -1,0 +1,96 @@
+* {margin: 0; padding: 0;}
+
+/* common */
+
+.container{
+  width: 600px; margin: 0 auto; text-align: center;
+}
+
+/*upper most*/
+.uppermost{
+  background-color: #004c8c;  
+}
+.container_um{
+  background-color: #0277bd;
+}
+
+/*header*/
+header{
+  background-color: #005b9f;
+}
+.container_h{
+  background-color: #0288d1;
+  background-image: url(https://cdn.pixabay.com/photo/2020/10/23/16/43/vicuna-5679264_960_720.jpg);
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+ }
+
+/*nav*/
+nav{
+  background-color: #007ac1;
+}
+
+.container_n{
+  background-color: #03a9f4;
+}
+
+
+/*main*/
+main{
+  background-color: #0086c3;
+}
+
+.container_m{
+  background-color: #29b6f6;
+  outline: 3px solid red;
+  overflow: hidden;
+}
+
+.container_m section{
+  float: left;
+}
+
+.container_m section.s1{
+  width: 50%;
+  background-color: yellowgreen;
+}
+
+.container_m section.s2{
+  width: 30%;
+  background-color: tomato;
+}
+
+.container_m section.s3{
+  width: 20%;
+  background-color: violet;
+}
+
+/*footer menu*/
+.footermenu{
+  background-color: #0093c4;
+}
+
+.container_fm{
+  background-color: #4fc3f7;
+}
+
+/*footer*/
+footer{
+  background-color: #82b3c9;
+}
+
+.container_f{
+  background-color: #b3e5fc;
+}
+
+/* 배경색 제거 */
+
+header,nav,main,.footermenu,footer {
+  background-color: transparent;
+}
+
+/*clearfix*/
+.clearfix {
+  clear:both;
+}

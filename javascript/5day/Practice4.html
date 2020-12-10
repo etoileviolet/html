@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>onmousemove</title>
+  <style>
+    img{width: 60px; height: 60px;
+    position: fixed;
+    transition: 0.6;
+    /* left:100px;
+    top: 200px;} */}
+  </style>
+</head>
+<body>
+  <h3>이미지 커서 만들기</h3>
+  <hr>
+  <p>마우스를 움직이면 이미지로 만든 커서가 마우스를 따라 다닙니다</p>
+  
+  <div><img src="https://www.denofgeek.com/wp-content/uploads/2020/06/We-Bare-Bears-Movie.png?resize=768%2C432"></img></div>
+  
+  <script>
+    const $img = document.querySelector("img");
+
+    document.addEventListener("mousemove",function(evt){
+      // $img.style.left = `${evt.clientX}px`;
+      // $img.style.top = `${evt.clientY}px`;
+      $img.style.top = evt.clientY +'px';
+      $img.style.left = evt.clientX +'px';
+    });
+  </script>
+
+</body>
+</html>
+<!-- 웹뷰어 개발자 모드 콘솔에서 마우스 포인트 위치 조회는 어떻게 ? -->

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      border: 1px solid red;
+      background-color: gray;
+      height: 500px;    
+    }
+    .box .item:nth-child(1) {
+      width: 200px; /*가로 크기를 부여해서 라인 전체를 영역을 사용하고 있는 것을 해제*/
+      margin: 0px auto; /* 블럭을 중앙에 */
+      background-color: yellow;
+      text-align: center;
+      border:3px solid violet;
+      padding: 5px;
+    }
+
+    span {background-color: orange;
+    padding: 5px;
+    width: 100px;
+    height: 100px; /*paddign은 적용되나 높이와 길이는 적용 안됌 */
+    
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="box">
+    <div class="item">hello</div>
+    <div class="item">hello2</div>
+    <span>hello3</span>
+    <span>hello4</span>
+  </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+* {margin: 0; padding: 0;}
+
+/* 공통 속성 */
+.container {width: 600px; margin: 0 auto;}
+
+/* 머리 */
+header {background-color: black;}
+.cont_h {
+  background-color: black;
+  height: 50Px;
+  color: white;
+  font-size: 0.8rem;
+  text-align: right;
+  line-height: 50px;
+}
+
+/* 상단 이미지 */
+.cont_img {
+  background-image: url(main.jpg);
+  height: 150px;
+  background-position: center;
+  background-size: cover;
+}
+
+/* 탐색 목록 */
+.cont_n {
+  background-color: black;
+  height: 50px;
+  color: white;
+  list-style: none;
+  text-align: center;
+}
+.cont_n li {
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 0.8rem;
+  line-height: 50px;
+}
+
+.cont_n a {
+  text-decoration: none;
+  color: white;
+}
+.cont_n a:hover {
+  text-decoration: underline;
+}
+
+/* 본문 내용 */
+
+.cont_m {background-color: magenta;
+  height: 900px;}
+
+.main {
+  display: inline-block;
+}
+
+aside {outline: 1px solid blue;
+  
+  background-color: lightskyblue;
+  width: 20%; height:100%;
+}
+
+section {outline: 1px solid red;
+  
+  background-color: lightcyan;
+  width: 80%; height: 100%;
+}
+
+.join_form>ul {
+  background-color: white;
+  width: 250px;
+}
+.join_form li {
+  list-style: none;
+
+}
+
+/* 하단 */
+
+.cont_f {
+  background-color: gray;
+  color: white;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+
+}

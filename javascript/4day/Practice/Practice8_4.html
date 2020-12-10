@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>챕터 8 실습문제 4번</title>
+</head>
+<body>
+  <h3>계산해봅시다</h3>
+  <hr>
+  <p> 2 + 4 = <span>답</span> </p>
+  <p> 4 * 20 + 64 = <span>답</span> </p>
+  <p> 20/5-8*2 = <span>답</span> </p>
+
+  <script>
+    const $span = document.getElementsByTagName("span"); // span 코드에 대해 유사배열 객체를 생성 , 접근할때는 배열과 같이 접근
+    console.log($span);
+    Array.from($span).forEach(function(ele){  // 람다식으로 변환 ???
+      ele.addEventListener("click",function(evt){
+        console.log(evt);
+        let exp = evt.target.parentElement.textContent.split('=')[0];
+        let result = eval(exp);
+        evt.target.innerHTML = result;     
+      });
+    });
+  </script>
+</body>
+</html>
+
+<!-- 크롬 검사에 콘솔에서 속성값이 제대로 안 뜸 ~ -->

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+  <style>
+    ul {
+      list-style: none;
+
+    }
+
+    .submit_b {
+      background-color: green;
+      color: white;
+      width: 300px;
+      height: 80;
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>header</header>
+
+  <form>
+    <fieldset>
+      <legend>
+
+        <h1>회원가입</h1>
+      </legend>
+      <ul>
+        <li>아이디<br><input type="text"></li>
+        <li>비밀번호<br><input type="password"></li>
+        <li>비밀번호확인<br><input type="password"></li>
+        <li>전화번호<br><input type="Tel"></li>
+        <li>별칭<br><input type="text"></li>
+        <li>지역<br><input type="text" list="where"><datalist id="where">
+            <option value="서울">
+            <option value="경기">
+            <option value="대전">
+            <option value="충청">
+            <option value="광주">
+            <option value="전라">
+            <option value="부산"></option>
+            <option value="경상"></option>
+          </datalist><br>
+          상세지역<br><select name="location">
+            <option value="1">남구
+            <option value="2">중구
+            <option value="3">북구
+            <option value="4">강남구
+            <option value="5">강서구</option>
+          </select></li>
+        <li>성별<br><input type="radio" name="gender">남자 <input type="radio" name="gender">여자</li>
+        <li>취미<br><input type="checkbox">독서 <input type="checkbox">음악감상 <input type="checkbox">운동 <input
+            type="checkbox">게임 </li>
+        <li>생년월일<br><input type="date" value="2020-01-01"></li><br>
+        <a href="http://127.0.0.1:5500/excrcise_3/cong.html"><input class="submit_b" type="submit" value="회원가입"></a>
+      </ul>
+    </fieldset>
+  </form>
+
+</body>
+
+</html>

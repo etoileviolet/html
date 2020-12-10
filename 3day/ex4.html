@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>소프트웨어 기술에 대한 의견을 듣습니다.</title>
+</head>
+<body>
+  <h1>설문지</h1>
+
+  소프트웨어 기술에 대한 의견을 듣습니다. 많은 참여 부탁드립니다
+
+    <hr>
+    학년 <label><input type="radio" name="class_age">1학년</label>
+    <label><input type="radio" name="class_age">2학년</label>
+    <label><input type="radio" name="class_age">3학년</label>
+
+      <label><input type="radio" name="class_age">4학년</label><br>
+    성별 <input type="radio" name="gender">남 <input type="radio" name="gender">여 <br>
+    관심분야 <input type="text" list="favorite"><datalist id="favorite"><option value="프론트 엔드"><option value="백 엔드"></option><option value="정보보안"><option value="SW개발"><option value="데이터베이스관리"></option>
+    </datalist> <br>
+    진로 <input type="checkbox">개발<input type="checkbox">기획<input type="checkbox">영업<input type="checkbox">창업<br>
+
+    콤보박스 연습<br>
+    <select name="food">
+      <option value="1">라면</option>
+      <option value="2">카레</option>
+      <option value="3" selected>김치찌게</option>
+      <option value="4">우동</option>
+    </select>
+    <br>
+
+    라디오 라벨 연습<br>
+    <label for="china">짜장면</label>
+<input type="radio" name="china" id="china" value="1">
+<input type="radio" name="china" id="china" value="1">
+<input type="radio" name="china" id="china" value="1">
+
+
+  
+<br>온도 설정 <br>
+0도<input type="range" min="0" max="100" list="temp">100도
+<datalist id="temp"><option value="10" label="저온">
+  <option value="50" label="중간">
+    <option value="90" label="고온"></option>
+  </option>
+</option></datalist>
+
+
+</body>
+</html>
